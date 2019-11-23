@@ -1,5 +1,9 @@
 # Lesson 1 - Next.js
 
+The repo branch for this lesson is [here](https://github.com/cnnrbrn/noroff-react-content-part-2-code/tree/lesson-1).
+
+---
+
 [Next.js](https://nextjs.org/) is a React framework that provides, amongst other things, server-side rendering (which will improve your site's SEO) and easy routing.
 
 We are going to convert last week's project into a Next app.
