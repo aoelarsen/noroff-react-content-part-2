@@ -244,3 +244,8 @@ export default function App() {
 	);
 }
 ```
+
+
+## Practice
+
+- The error message containers are simple `p` tags. Create a Styled Component to display the error messages.
