@@ -176,7 +176,7 @@ Add a menu item called `redux-test` into the nav:
 </Link>
 ```
 
-and a new page `pages/redux-test.js`:
+Add a new page `pages/redux-test.js`:
 
 ```js
 import React from "react";
@@ -222,7 +222,7 @@ export default connect(null, { clickButton })(CounterButton);
 
 It's first argument is a function that we pass in to retrieve data from the store. We don't need to access any properties from the store in this component so we pass in `null`.
 
-The second arguments is an object of functions we want to dispatch from the component. We are passing in our `clickButton` function.
+The second argument is an object of functions we want to dispatch from the component. We are passing in our `clickButton` function.
 
 Clicking our button component will now update the `clickCount` property in the store.
 
@@ -262,6 +262,8 @@ This function will receive the `store` object as an argument. Inside, we return 
 We're calling our property `count`. You can call it anything.
 
 The object that is returned from the `mapStateToProps` function will become part of the props our `CounterLabel` component will receive.
+
+We aren't dispatching any action creator functions from this component so we don't need a second argument to `connect`.
 
 ### Dev tools
 
