@@ -10,7 +10,7 @@ State management allows us to access props and data from a `store` no matter whe
 
 ![The store](/images/redux-1.png)
 
-Redux is a state management library with a lot of legacy code weight. It can be a difficult libary to understand, and if you feel lost at first you are joining just about every other developer in the world.
+[Redux](https://redux.js.org/) is a state management library with a lot of legacy code weight. It can be a difficult libary to understand, and if you feel lost at first you are joining just about every other developer in the world.
 
 It too will take a fair bit of configuration to get working.
 
@@ -166,7 +166,7 @@ export const CLICK_BUTTON = "CLICK_BUTTON";
 
 ## Testing
 
-Add a menu item called `redux-test` into the nav:
+Add a menu item called `Redux Text` into the nav:
 
 ```js
 <Link href="/redux-test">

@@ -389,6 +389,44 @@ with
 
 Change the values in the `theme` object and the styled components to see how the components are updated.
 
+## Styling any component
+
+So far we've only styled native HTML elements like `h1` and `div`. It's possible to style any component using the `styled` method:
+
+```js
+const StyledComponent = styled(SomeComponent)`
+    color: red;
+`;
+```
+
+Say we wanted to add a top margin to the Bootstrap `Container` component in our `Layout` component, we could add the following in `components\layout\Layout.js`:
+
+```js
+// ... other immports
+import Container from "react-bootstrap/Container";
+import styled from "styled-components";
+
+// here we create a new custom styled component from react-bootstrap's Container
+const StyledContainer = styled(Container)`
+    margin-top: 30px;
+`;
+
+export default function Layout(props) {
+// ... rest of function definition
+```
+
+Then we replace
+
+```js
+<Container>{props.children}</Container>
+```
+
+with
+
+```js
+<StyledContainer>{props.children}</StyledContainer>
+```
+
 ## Practice
 
 -   Add a new property in the `theme` object. Use this property to set the `border-width` of the `Card` component.

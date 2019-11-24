@@ -31,6 +31,8 @@ Then open [http://localhost:3000](http://localhost:3000) in your browser.
 -   `pages` - this will hold the components that will serve as the pages in our app.
 -   `static` or `public` - if your version of `create-next-app` calls this folder `static`, please rename it to `public`. This is where things like images and favicons will go.
 
+You can delete `components/nav.js`.
+
 ## Routing
 
 Every file in the `pages` folder, such as `about.js` or `contact.js`, will be become a route we can navigate to without having to use a library like `react-router`.
