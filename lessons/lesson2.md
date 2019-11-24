@@ -104,7 +104,7 @@ Create `constants/theme.js` and add the following:
 ```js
 export default {
     colors: {
-        primary: "#343a40",
+        primary: "#bf083a",
     },
 };
 ```
@@ -342,10 +342,8 @@ Create `components/characters/list/Name.js`:
 import styled from "styled-components";
 
 const Name = styled.h5`
-    font-size: 1.1em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 0.9em;
+    text-transform: uppercase;
     color: ${props => props.theme.colors.characterName};
 `;
 
@@ -361,8 +359,8 @@ We need to add the `characterName` property to our `theme` object in `constants/
 ```js
 export default {
     colors: {
-        primary: "#343a40",
-        characterName: "#d60e0e",
+        primary: "#bf083a",
+        characterName: "black",
     },
 };
 ```
