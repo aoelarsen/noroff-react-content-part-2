@@ -135,7 +135,7 @@ Actions are plain JavaScript objects that are sent to the store and get handled 
 }
 ```
 
-Often they have a second property which is the data that is getting send to the store.
+Often they have a second property which is the data that is getting sent to the store.
 
 ```js
     {
