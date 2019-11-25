@@ -55,7 +55,7 @@ export default withRedux(initStore, { debug: true })(
 );
 ```
 
-We're going to build a trivial counter as a simple introduction to Redux. W'll keep all our Redux-related code in a folder called `redux`.
+We're going to build a trivial counter as a simple introduction to Redux. We'll keep all our Redux-related code in a folder called `redux`.
 
 ### The store
 
@@ -110,7 +110,7 @@ On this line
 return { ...state, clickCount: state.clickCount + 1 };
 ```
 
-we are using the [object spread operator](https://redux.js.org/recipes/using-object-spread-operator) to create a copy of the current state object and update this new object with the new `clickCount` value. The new object then becomes the value of the store.
+we're using the [object spread operator](https://redux.js.org/recipes/using-object-spread-operator) to create a copy of the current state object and update this new object with the new `clickCount` value. The new object then becomes the value of the store.
 
 In `redux/reducers/index.js` we import all reducers we need to, combine them together and export them. We only have one reducer but it is very common to split your reducers into separate files.
 
@@ -135,7 +135,7 @@ Actions are plain JavaScript objects that are sent to the store and get handled 
 }
 ```
 
-Often they have a second property which is the data that is getting sent to the store.
+Often they have a second property which is the data that is getting sent to the store. This second property can be called anything; it is often called `payload`.
 
 ```js
     {
@@ -220,7 +220,7 @@ export default connect(null, { clickButton })(CounterButton);
 
 `connect` is a higher order component (HOC) that wraps our `CounterButton` component to give it access to the store.
 
-It's first argument is a function that we pass in to retrieve data from the store. We don't need to access any properties from the store in this component so we pass in `null`.
+Its first argument is a function that we pass in to retrieve data from the store. We don't need to access any data from the store in this component so we pass in `null`.
 
 The second argument is an object of functions we want to dispatch from the component. We are passing in our `clickButton` function.
 
