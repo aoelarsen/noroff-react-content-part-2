@@ -50,7 +50,7 @@ export default function App() {
 }
 ```
 
-Our form only has one input, `firstName`. We need to register each input using a [ref](https://reactjs.org/docs/refs-and-the-dom.html) and calling the `register` function. A ref is a way to access DOM nodes.
+Our form only has one input, `firstName`. We need to register each input by using a [ref](https://reactjs.org/docs/refs-and-the-dom.html) and calling the `register` function. A ref is a way to access DOM nodes.
 
 ```js
 <input name="firstName" placeholder="First name" ref={register} />
