@@ -4,21 +4,21 @@ The code for this lesson can be found on [this branch](https://github.com/cnnrbr
 
 ---
 
-Next provides its own css-in-js solution, but we are going to try [Styled Components](https://www.styled-components.com/).
+Next provides its own css-in-js solution, Styled JSX, but we are going to use [Styled Components](https://www.styled-components.com/).
 
 With Styled Components your styles only apply to a single component. You use plain CSS and don't have to worry about clashing class names or naming systems like `BEM`.
 
 This is in contrast to pre-processors like `Sass` which apply global styles to your app.
 
-You can still use Sass-like conventions like nesting and we can create a theme to use in all components.
+You can still use Sass-like conventions like nesting. We can also create a theme to use in all components.
 
-## Getting Styled Components to work with Next.
+## Getting Styled Components to work with Next
 
 Next often requires extra configuration to get a library working due to server-side requirements. This is true of Styled Components.
 
 The Next [examples repo](https://github.com/zeit/next.js/tree/canary/examples) has many configuration examples for a wide variety of libraries and implementations.
 
-The slightly modified code below comes [this example](https://github.com/zeit/next.js/tree/canary/examples/with-styled-components).
+The slightly modified code below comes from [this example](https://github.com/zeit/next.js/tree/canary/examples/with-styled-components).
 
 Install `styled-components`:
 
@@ -97,7 +97,7 @@ export default class MyApp extends App {
 }
 ```
 
-`_app.js` is a special file we can use to extend page initialisation. In the above code we are using it to wrap our page components in a `ThemeProvider` component which will pass a `theme` prop that we can use in all our styled components.
+`_app.js` is a special file we can use to extend page initialisation. In the above code we are using it to wrap our page components in a `ThemeProvider` component which will pass a `theme` prop down that we can use in all our styled components.
 
 Create `constants/theme.js` and add the following:
 
@@ -109,7 +109,7 @@ export default {
 };
 ```
 
-This file exports an object that we will use to house our theme variables. You can add any properties you want here and use them in your styled components.
+This file exports an object that we will use to house our theme variables. You can add any properties you want here and use them in your Styled Components.
 
 ## Using Styled Components
 
@@ -137,7 +137,7 @@ const Heading = styled.h1`
 
 We are creating a `Heading` component of an h1 element. Inside the `` tags we can write normal CSS to style this component.
 
-We can create a styled component of most element types, e.g:
+We can create a Styled Component of most element types, e.g:
 
 ```js
 const Button = styled.button`
@@ -169,7 +169,7 @@ export default function About() {
 }
 ```
 
-Styled components can receive props and you can use them within the styles.
+Styled Components can receive props and you can use them within the styles.
 
 Add another CSS property to the `Heading` component:
 
@@ -181,7 +181,7 @@ const Heading = styled.h1`
 `;
 ```
 
-The **styled.h1``** notation is called a `Tagged template literal`. [Here](https://mxstbr.blog/2016/11/styled-components-magic-explained/) is a good explanation of how they work and are used in styled components.
+The **styled.h1``** notation is called a `tagged template literal`. [Here](https://mxstbr.blog/2016/11/styled-components-magic-explained/) is a good explanation of how they work and are used in Styled Components.
 
 Basically, we can execute functions within the tags and the functions will receive the `props` we pass into the component.
 
