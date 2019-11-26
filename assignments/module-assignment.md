@@ -30,7 +30,7 @@ Pay special attention to arranging your components in small, reusable units.
 Styling, apart from that required in the brief, is not important. The submission needn't be responsive. You can use a UI framework like `react-bootstrap` or leave it out.
 
 #### Question 2
-- Add a form to a page called `form`. There must be two inputs:
+- Add a form to a page called `form` using React Hook Form. There must be two inputs:
     - A required email address
     - A required password with a minimum of 8 characters
 - If validation passes, the form must console log the submitted form values.
