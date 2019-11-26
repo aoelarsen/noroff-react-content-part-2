@@ -1,6 +1,6 @@
 # Module Assignment 3: React part 2
 
-You can either create a new Next.js app or use the `lesson-2` branch of the module's repo. If you use the branch delete all unecessary files and code.
+You can either create a new Next.js app or use the [lesson-2 branch](https://github.com/cnnrbrn/noroff-react-content-part-2-code/tree/lesson-2) of the module's repo. If you use the branch delete all unecessary files and code.
 
 If you undertake level 2, you can clone the `lesson-3` branch.
 
