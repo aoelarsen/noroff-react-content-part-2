@@ -8,7 +8,7 @@ If you undertake level 2, you can clone the [lesson-3 branch](https://github.com
 
 The API endpoint is `https://elephant-api.herokuapp.com/elephants` but it requires a CORS workaround so use: `https://cors-anywhere.herokuapp.com/https://elephant-api.herokuapp.com/elephants`
 
-Using the CORS workaround may return an error in the API call on the server-side (check your terminal). Add a headers object with the following to the call:
+To get the API call to work on the server using the CORS anywhere proxy, add a X-Requested-With header:
 
 ```js
 const headers = {
