@@ -8,8 +8,6 @@ So far we have only passed props directly into child components, apart from when
 
 State management allows us to access props and data from a `store` no matter where the component might be in the component tree. The `store` is an object with properties.
 
-<!-- ![The store](/images/redux-1.png) -->
-
 <img src="../images/redux-1.png" alt="The store" width="600" height="455" />
 
 [Redux](https://redux.js.org/) is a state management library with a lot of legacy code weight. It can be a difficult libary to understand, and if you feel lost at first you are joining just about every other developer in the world.
@@ -58,6 +56,17 @@ export default withRedux(initStore, { debug: true })(
 ```
 
 We're going to build a trivial counter as a simple introduction to Redux. We'll keep all our Redux-related code in a folder called `redux`.
+
+### Store, reducers, actions
+
+There are three main parts to Redux:
+
+- The ***store*** holds the application state (data)
+- ***Actions*** are dispatched (sent) to the store from the view (UI)
+- ***Reducers*** decide based on the actions they receive how to update the state in the store
+
+<img src="../images/redux-1.png" alt="Store, reducers, actions" width="600" height="230" />
+
 
 ### The store
 
