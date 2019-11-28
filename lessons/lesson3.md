@@ -10,7 +10,7 @@ State management allows us to access props and data from a `store` no matter whe
 
 <!-- ![The store](/images/redux-1.png) -->
 
-<img src="../images/redux-1.png" alt="The store" width="550" height="417" />
+<img src="../images/redux-1.png" alt="The store" width="600" height="455" />
 
 [Redux](https://redux.js.org/) is a state management library with a lot of legacy code weight. It can be a difficult libary to understand, and if you feel lost at first you are joining just about every other developer in the world.
 
