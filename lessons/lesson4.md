@@ -249,3 +249,9 @@ export default function App() {
 ## Practice
 
 - The error message containers are simple `p` tags. Create a Styled Component to display the error messages.
+
+## Form builder
+
+Apart from being arguably the easiest to use React form library, requiring the least amount of code, React Hook Form also offers a [form builder](https://react-hook-form.com/form-builder).
+
+Validation is currently only available through the `register` function. 
