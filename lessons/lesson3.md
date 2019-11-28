@@ -64,6 +64,7 @@ There are three main parts to Redux:
 - The ***store*** holds the application state (data)
 - ***Actions*** are dispatched (sent) to the store from the view (UI)
 - ***Reducers*** decide based on the actions they receive how to update the state in the store
+- Views are populated with data from the store
 
 <img src="../images/redux-3.png" alt="Store, reducers, actions" width="600" height="230" />
 
