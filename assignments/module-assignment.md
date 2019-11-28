@@ -8,7 +8,15 @@ If you undertake level 2, you can clone the [lesson-3 branch](https://github.com
 
 The API endpoint is `https://elephant-api.herokuapp.com/elephants` but it requires a CORS workaround so use: `https://cors-anywhere.herokuapp.com/https://elephant-api.herokuapp.com/elephants`
 
+Using the CORS workaround may return an error in the API call on the server-side (check your terminal). Add a headers object with the following to the call:
 
+```js
+const headers = {
+    "X-Requested-With": "XMLHttpRequest"
+};
+
+const response = await axios.get(BASE_URL, { headers });
+```
 
 ### Suggested CSS
 
