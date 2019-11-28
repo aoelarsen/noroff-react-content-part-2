@@ -210,6 +210,7 @@ export default function ReduxTest() {
 
 The `CounterButton` component will call the `clickButton` action creator function to update the store, and the `CounterLabel` component will retrieve the `clickCount` property from the store and display it.
 
+
 In `components/ui/CounterButton.js`:
 
 ```js
@@ -237,6 +238,10 @@ Its first argument is a function that we pass in to retrieve data from the store
 The second argument is an object of functions we want to dispatch from the component. We are passing in our `clickButton` function.
 
 Clicking our button component will now update the `clickCount` property in the store.
+
+<img src="../images/redux-4.png" alt="CounterButton flow" width="600" height="230" />
+
+--- 
 
 In `components/ui/CounterLabel.js`:
 
@@ -276,6 +281,10 @@ We're calling our property `count`. You can call it anything.
 The object that is returned from the `mapStateToProps` function will become part of the props our `CounterLabel` component will receive.
 
 We aren't dispatching any action creator functions from this component so we don't need a second argument to `connect`.
+
+<img src="../images/redux-5.png" alt="CounterLabel flow" width="398" height="230" />
+
+---
 
 ### Dev tools
 
