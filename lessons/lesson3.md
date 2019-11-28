@@ -65,7 +65,7 @@ There are three main parts to Redux:
 - ***Actions*** are dispatched (sent) to the store from the view (UI)
 - ***Reducers*** decide based on the actions they receive how to update the state in the store
 
-<img src="../images/redux-1.png" alt="Store, reducers, actions" width="600" height="230" />
+<img src="../images/redux-3.png" alt="Store, reducers, actions" width="600" height="230" />
 
 
 ### The store
