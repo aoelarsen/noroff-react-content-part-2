@@ -8,7 +8,9 @@ So far we have only passed props directly into child components, apart from when
 
 State management allows us to access props and data from a `store` no matter where the component might be in the component tree. The `store` is an object with properties.
 
-![The store](/images/redux-1.png)
+<!-- ![The store](/images/redux-1.png) -->
+
+<img src="../images/redux-1.png" alt="The store" width="550" height="417" />
 
 [Redux](https://redux.js.org/) is a state management library with a lot of legacy code weight. It can be a difficult libary to understand, and if you feel lost at first you are joining just about every other developer in the world.
 
