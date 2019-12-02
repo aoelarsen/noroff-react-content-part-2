@@ -295,7 +295,7 @@ npm install axios
 
 In Next, an asynchronous function called `getInitialProps` is where API calls are made. With this function, we can fetch data using an API call and pass it as props to the page. `getInitialProps` only works in page components.
 
-In `pages`index.js`, import`axios`and`BASE_URL`:
+In `pages/index.js`, import `axios` and `BASE_URL`:
 
 ```js
 import axios from "axios";
@@ -323,7 +323,7 @@ We return an object from the function that will become the `props` that get pass
 
 Change your component to accept `props` as an argument and this time when we `console.log` the data will be displayed in the browser console.
 
-This is how `pages`index.js`should look now with an added prop type check, removal of the unecessary elements and a`map`over the`characters` prop:
+This is how `pages/index.js` should look now with an added prop type check, removal of the unecessary elements and a `map` over the `characters` prop:
 
 ```js
 import React from "react";
